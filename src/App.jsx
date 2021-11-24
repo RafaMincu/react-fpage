@@ -1,11 +1,19 @@
 import React, { Component } from 'react'
 
 class App extends Component {
+    constructor (props) {
+        super(props)
+        
+        this.state = {
+            msg: "Prima componenta",
+            txt: "Aceasta este prima mea componenta"
+        }
+    }
     render () {
         return (
             <div>
-                <h1>Prima componenta</h1>
-                <p>Aceasta este prima mea componenta</p>
+                <h1>{ this.state.msg }</h1>
+                <p>{ this.state.txt }</p>
             </div>
         )
     }
