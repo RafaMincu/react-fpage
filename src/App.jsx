@@ -13,7 +13,8 @@ class App extends Component {
         return (
             <div>
                 <h1>{ this.state.msg }</h1>
-                <p>{ this.state.txt }</p>
+                <p>{ this.state.txt }</p>  {/* folosesc sintaxa this.state pentru a prelua informatii din interiorul componentei */}
+                <p>{ this.props.message }</p> {/* folosesc sintaxa this.props pentru a prelua informatii din exteriorul componentei */}
             </div>
         )
     }
