@@ -1,3 +1,20 @@
-.App {
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+div.App {
     color: red;
+}
+
+input {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;
 }
