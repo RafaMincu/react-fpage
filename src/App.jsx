@@ -24,7 +24,7 @@ class App extends Component {
 
     changeTxt () {
         this.setState({
-            txt: 'Am apasat butonul Change Text'
+            txt: 'Am apasat butonul Add Task'
         })
        this.addTask()
     }
