@@ -25,7 +25,7 @@ export default function Expenses() {
                 </form>
             </div>
         </section>
-        <section id="boxes">
+        <div id="boxes">
             <div class="container">
                 <div class="box">
                     <img src={logohtml}/>
@@ -43,7 +43,8 @@ export default function Expenses() {
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea magni ducimus laboriosam placeat! Laudantium dolorum exercitationem laboriosam fuga ad porro.</p>
                 </div>
             </div>
-        </section>
+        </div>
       </div>
+
     );
   }

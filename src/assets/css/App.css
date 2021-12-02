@@ -124,17 +124,22 @@ header a:hover{
 /* Boxes */
 #boxes{
     margin-top: 20px;
+    text-align: center;
+
 }
 
 #boxes .box{
-    float: left;
-    text-align: center;
     width: 30%;
     padding: 10px;
+    display:inline-block;
 }
 
 #boxes .box img{
     width: 90px;
+}
+
+.test{
+    text-align: center;
 }
 
 
