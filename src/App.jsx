@@ -1,72 +1,27 @@
 import React, { Component } from 'react'
 import './App.css'
+import Header from "./pages/Header";
+import Home from "./pages/Home";
+import Footer from "./pages/Footer";
 
 class App extends Component {
-    constructor (props) {
-        super(props)
-        
-        this.state = {
-            msg: "Prima componenta",
-            txt: "Aceasta este prima mea componenta",
-            txtInput: "Aici va aparea textul introdus in input",
-            task: '',
-            tasks: []
-        }
-    }
-
-    changeText (e) {
-
-        this.setState({
-            task: e.target.value,
-            txtInput: e.target.value
-        })
-    }
-
-    changeTxt () {
-        this.setState({
-            txt: 'Am apasat butonul Add Task'
-        })
-       this.addTask()
-    }
-
-    addTask () {
-        let tasks = this.state.tasks
-        tasks.push(this.state.task)
-        this.setState({
-            tasks
-        })
-        console.log(this.state.tasks)
-    }
-
-    listTasks() {
-        let tasks = this.state.tasks
-        return (
-            <ul>
-                {
-                    tasks.map((val, index) => {
-                        return (
-                            <li key={index}>
-                                    { val }
-                            </li>
-                        )
-                    })
-                }
-            </ul>
-        )
-    }
-
     render () {
         return (
             <div className="App">
-                <h1>{ this.state.msg }</h1>
-                <p>{ this.state.txt }</p>  {/* folosesc sintaxa this.state pentru a prelua informatii din interiorul componentei */}
-                <p>{ this.props.message }</p> {/* folosesc sintaxa this.props pentru a prelua informatii din exteriorul componentei */}
-                <p>{ this.state.txtInput }</p>
-                <input type="text" onChange={(e) => this.changeText(e)}/>
-                <button onClick={() => this.changeTxt()}> 
-                    Add Task
-                </button>
-                { this.listTasks() }
+                <head>
+                    <meta charset="UTF-8"/>
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                    <meta name="description" content="Affordable and professional web design"/>
+                    <meta name="keywords" content="web design, affordable web design"/>
+                    <meta name="author" content="Mincu Rafael"/>
+                    <title>Boost Web Design | Welcome</title>
+                </head>
+                <body>
+                    <Header />
+                        <Home />
+                    <Footer />
+                </body>
             </div>
         )
     }
