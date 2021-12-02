@@ -69,7 +69,7 @@ header nav{
     margin-top: 10px;
 }
 
-header .highlight, header .current a{
+header .highlight, header a.active{
     color: #e8491d;
     font-weight: bold;
 }
@@ -79,9 +79,6 @@ header a:hover{
     font-weight: bold;
 }
 
-.active{
-    color:red;
-   }
 
 /* Showcase */
 #showcase{
