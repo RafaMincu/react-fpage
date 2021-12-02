@@ -1,23 +1,27 @@
-import { render } from "react-dom";
+import ReactDOM from "react-dom";
 import {
   BrowserRouter,
   Routes,
   Route
 } from "react-router-dom";
-import App from "./App";
+import Header from "./routes/Header";
+import Footer from "./routes/Footer";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Services from "./routes/Services";
+import './assets/css/App.css';
 
-const rootElement = document.getElementById("root");
-render(
+const routing = (
   <BrowserRouter>
+  <Header />
     <Routes>
-      <Route path="/" element={<App />} />
+      <Route exact path="/" element={<Home />} />
       <Route path="home" element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="services" element={<Services />} />
     </Routes>
-  </BrowserRouter>,
-  rootElement
+  <Footer />
+  </BrowserRouter>
 );
+
+ReactDOM.render(routing, document.getElementById("root"));

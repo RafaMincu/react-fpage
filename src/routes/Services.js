@@ -1,15 +1,13 @@
 import React from 'react'
 import MetaTags from 'react-meta-tags';
-import Header from '../routes/Header'
-import Footer from '../routes/Footer'
 
-const services = () => {
+
+export default function services(){
     return (
         <div>
             <MetaTags>
                 <title>Boost Web Design | Services</title>
             </MetaTags>
-            <Header />
             <section id="main">
                 <div className="container">
                     <article id="main-col">
@@ -55,10 +53,9 @@ const services = () => {
                     </aside>
                 </div>
             </section>
-            <Footer />  
         </div>
     )
 }
 
-export default services
+
  
