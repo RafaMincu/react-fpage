@@ -1,3 +1,4 @@
+import MetaTags from 'react-meta-tags';
 import logohtml from '../assets/images/logo_html.png'
 import logocss from '../assets/images/logo_css.png'
 import logobrush from '../assets/images/logo_brush.png'
@@ -6,6 +7,9 @@ import logobrush from '../assets/images/logo_brush.png'
 export default function Expenses() {
     return (
       <div>
+        <MetaTags>
+            <title>Boost Web Design | Home</title>
+        </MetaTags>
         <section id="showcase">
             <div class="container">
                 <h1>Affordable Professional Web Design</h1>

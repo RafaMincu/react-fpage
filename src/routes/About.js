@@ -1,14 +1,14 @@
 import React from 'react'
+import MetaTags from 'react-meta-tags';
 import Header from '../routes/Header'
 import Footer from '../routes/Footer'
 
 const about = () => {
     return (
         <div>
-            <head>
-                <title>Boost Web Design | Services</title>
-                <link rel="stylesheet" href="./App.css"/>
-            </head>
+            <MetaTags>
+                <title>Boost Web Design | About</title>
+            </MetaTags>
             <Header />
             <section id="main">
                 <div class="container">
